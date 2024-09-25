@@ -32,7 +32,7 @@ Metode Regula Falsi juga diawali dengan memilih dua titik dengan nilai $f(x)$ ya
 | Nilai awal yang dibutuhkan [^1] | $a$, $b$ | $a$, $b$ | $a$ |
 | Titik acuan baru di iterasi berikutnya | titik tengah $a$ dan $b$ | titik potong garis penghubung $f(a)$ dan $f(b)$ dengan sumbu-x | *di chapter lain* |
 
-[^1]: Nilai batas error yang diinginkan selalu dibutuhkan dalam semua metode untuk 
+[^1]: Adapun nilai batas error selalu dibutuhkan dalam semua metode untuk menjadi terminus dari iterasi metode 
 
 Pada Metode Regula Falsi, titik berikutnya diambil dari perpotongan garis hubung antara $f(a)$ dan $f(b)$ dengan sumbu-x.
 
@@ -47,17 +47,18 @@ $g_1(x)$ pada gambar ilustrasi adalah garis penghubung antara titik A dan titik 
 $x^*$ merupakan titik potong $g_1(x)$ dengan sumbu-x.
 
 Segitiga $[(x^*,0), (b_0, 0), (b_0, f(b_0))]$ dengan segitiga $[(a_0,f(a_0)), (b_0, f(a_0)), (b_0, f(b_0))]$ adalah pasangan segitiga sebangun. Dari kesebangunan ini, kita dapatkan bahwa perbandingan tinggi dan alas pada kedua segitiga tersebut adalah sama.
+
 $$\frac{f(b_0) - 0}{b_0 - x^*} = \frac{f(b_0) - f(a_0)}{b_0 - a_0}$$
+
 Yang kita perlu cari adalah $x^*$ (untuk menjadi titik acuan di iterasi berikutnya).
-$$
-\begin{aligned}
-\frac{f(b_0)}{b_0 - x^*} &= \frac{f(b_0) - f(a_0)}{b_0 - a_0}\\
-f(b_0)(b_0 - a_0) &= (b_0 - x^*)(f(b_0) - f(a_0))\\
-f(b_0)(b_0 - a_0) &= b_0(f(b_0) - f(a_0)) - x^*(f(b_0) - f(a_0))\\
-x^*(f(b_0) - f(a_0)) &= b_0(f(b_0) - f(a_0)) - f(b_0)(b_0 - a_0)\\
-x^*(f(b_0) - f(a_0)) &= \cancel{b_0f(b_0)} - b_0f(a_0) - \cancel{b_0f(b_0)} + a_0f(b_0)\\
-\end{aligned}
-$$
+
+$$\begin{aligned}
+\frac{f(b_0)}{b_0 - x^*} &= \frac{f(b_0) - f(a_0)}{b_0 - a_0} \\
+f(b_0)(b_0 - a_0) &= (b_0 - x^*)(f(b_0) - f(a_0)) \\
+f(b_0)(b_0 - a_0) &= b_0(f(b_0) - f(a_0)) - x^*(f(b_0) - f(a_0)) \\
+x^*(f(b_0) - f(a_0)) &= b_0(f(b_0) - f(a_0)) - f(b_0)(b_0 - a_0) \\
+x^*(f(b_0) - f(a_0)) &= \cancel{b_0f(b_0)} - b_0f(a_0) - \cancel{b_0f(b_0)} + a_0f(b_0) 
+\end{aligned}$$
 
 $$x^* = \frac{a_0f(b_0) - b_0f(a_0)}{f(b_0) - f(a_0)} \text{ atau } x^* = \frac{b_0f(a_0) - a_0f(b_0)}{f(a_0) - f(b_0)}$$
 
