@@ -4,7 +4,7 @@ Metode Biseksi bekerja dengan menetapkan dua titik absis awal, disebut $a$ dan $
 
 Memeriksa apakah $a$ dan $b$ dipisahkan oleh sumbu-x dapat dilakukan dengan mengalikan ordinat keduanya. Jika terpisah oleh sumbu-x maka hasil kalinya pasti bernilai negatif karena salah satu titik berada di bawah sumbu-x (ordinatnya lebih kecil dari 0) dan yang lainnya di atas sumbu-x.
 
-$a$ dan $b$ harus memenuhi: $f(a) * f(b) < 0$
+$a$ dan $b$ harus memenuhi: $f(a) \times f(b) < 0$
 
 ![Ilustrasi metode biseksi](../../assets/akar_non_linier/biseksi_ilustrasi.png)
 (p pada ilustrasi di atas adalah titik tengah a dan b)
@@ -38,6 +38,28 @@ Pada Metode Regula Falsi, titik berikutnya diambil dari perpotongan garis hubung
 
 ![Ilustrasi metode regula falsi](../../assets/akar_non_linier/regula_falsi_ilustrasi.png)
 ( $g(x)$ pada ilustrasi di atas adalah garis penghubung antara $f(a)$ dan $f(b)$ )
+
+$g(x)$ atau garis penghubung antara $f(a)$ dan $f(b)$ dapat dicari persamaannya dengan cara seperti berikut.
+> misalkan nilai $a$ pertama adalah $a_0$ dan nilai $b$ pertama adalah $b_0$
+
+$g_1(x)$ pada gambar ilustrasi adalah garis penghubung antara titik A dan titik B. Titik A adalah $(a_0, f(a_0))$ dan titik B adalah $(b_0, f(b_0))$.
+<br>
+$x^*$ merupakan titik potong $g_1(x)$ dengan sumbu-x.
+
+Segitiga $[(x^*,0), (b_0, 0), (b_0, f(b_0))]$ dengan segitiga $[(a_0,f(a_0)), (b_0, f(a_0)), (b_0, f(b_0))]$ adalah pasangan segitiga sebangun. Dari kesebangunan ini, kita dapatkan bahwa perbandingan tinggi dan alas pada kedua segitiga tersebut adalah sama.
+$$\frac{f(b_0) - 0}{b_0 - x^*} = \frac{f(b_0) - f(a_0)}{b_0 - a_0}$$
+Yang kita perlu cari adalah $x^*$ (untuk menjadi titik acuan di iterasi berikutnya).
+$$
+\begin{aligned}
+\frac{f(b_0)}{b_0 - x^*} &= \frac{f(b_0) - f(a_0)}{b_0 - a_0}\\
+f(b_0)(b_0 - a_0) &= (b_0 - x^*)(f(b_0) - f(a_0))\\
+f(b_0)(b_0 - a_0) &= b_0(f(b_0) - f(a_0)) - x^*(f(b_0) - f(a_0))\\
+x^*(f(b_0) - f(a_0)) &= b_0(f(b_0) - f(a_0)) - f(b_0)(b_0 - a_0)\\
+x^*(f(b_0) - f(a_0)) &= \cancel{b_0f(b_0)} - b_0f(a_0) - \cancel{b_0f(b_0)} + a_0f(b_0)\\
+\end{aligned}
+$$
+
+$$x^* = \frac{a_0f(b_0) - b_0f(a_0)}{f(b_0) - f(a_0)} \text{ atau } x^* = \frac{b_0f(a_0) - a_0f(b_0)}{f(a_0) - f(b_0)}$$
 
 ## Percobaan
 
