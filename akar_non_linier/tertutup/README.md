@@ -4,14 +4,14 @@ Metode Biseksi bekerja dengan menetapkan dua titik absis awal, disebut $a$ dan $
 
 Memeriksa apakah $a$ dan $b$ dipisahkan oleh sumbu-x dapat dilakukan dengan mengalikan ordinat keduanya. Jika terpisah oleh sumbu-x maka hasil kalinya pasti bernilai negatif karena salah satu titik berada di bawah sumbu-x (ordinatnya lebih kecil dari 0) dan yang lainnya di atas sumbu-x.
 
-$a$ dan $b$ harus memenuhi: $ f(a) * f(b) < 0 $
+$a$ dan $b$ harus memenuhi: $f(a) * f(b) < 0$
 
 ![Ilustrasi metode biseksi](../../assets/akar_non_linier/biseksi_ilustrasi.png)
 (p pada ilustrasi di atas adalah titik tengah a dan b)
 
 Kemudian kita menandai titik tengah antara dua absis tersebut, lalu menggunakan titik tersebut beserta salah satu titik sebelumnya dengan syarat masih mengapit titik potong yang sedang dicari. Demikian dilakukan terus-menerus hingga semakin mendekati titik potong tersebut.
 
-Titik tengah = $ (a + b) \over 2 $
+Titik tengah = $(a + b) \over 2$
 
 ## Percobaan
 Program akan meminta dua (3) buah masukan.
@@ -21,8 +21,6 @@ Program akan meminta dua (3) buah masukan.
 Contoh masukan: `0.001`, `3.0`, dan `4.0`
 
 ![Tampilan hasil dari pemanggilan function biseksi](../../assets/akar_non_linier/biseksi.png)
-
-<br>
 
 # Regula Falsi
 ## Teori
@@ -51,18 +49,6 @@ Contoh masukan: `0.001`, `3.0`, dan `4.0`
 
 ![Tampilan hasil dari pemanggilan function biseksi](../../assets/akar_non_linier/regula_falsi.png)
 
-<br>
-
 #
 **Catatan Tambahan**<br>
 Gunakan angka dengan nilai $f(x)$ tidak terlalu besar (mencapai ribuan). Program hanya menerapkan *tab* sederhana, tidak menyesuaikan panjang kata sebelumnya.
-
-
-<style>
-    table {
-        width: 100%;
-    }
-    th, td {
-        border: 1px solid black;
-    }
-</style>
