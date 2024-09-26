@@ -48,20 +48,21 @@ $x^*$ merupakan titik potong $g_1(x)$ dengan sumbu-x.
 
 Segitiga $[(x^*,0), (b_0, 0), (b_0, f(b_0))]$ dengan segitiga $[(a_0,f(a_0)), (b_0, f(a_0)), (b_0, f(b_0))]$ adalah pasangan segitiga sebangun. Dari kesebangunan ini, kita dapatkan bahwa perbandingan tinggi dan alas pada kedua segitiga tersebut adalah sama.
 
-$$\frac{f(b_0) - 0}{b_0 - x^*} = \frac{f(b_0) - f(a_0)}{b_0 - a_0}$$
+$$\frac{f(b_0) - 0}{b_0 - x^p} = \frac{f(b_0) - f(a_0)}{b_0 - a_0}$$
 
-Yang kita perlu cari adalah $x^*$ (untuk menjadi titik acuan di iterasi berikutnya).
+Yang kita perlu cari adalah $x^p$ (untuk menjadi titik acuan di iterasi berikutnya).
+
 $$
-\begin{array}{rl}
-\frac{f(b_0)}{b_0 - x^* } &= \frac{f(b_0) - f(a_0)}{b_0 - a_0}\\
-f(b_0)(b_0 - a_0) &= (b_0 - x^* )(f(b_0) - f(a_0))\\
-f(b_0)(b_0 - a_0) &= b_0(f(b_0) - f(a_0)) - x^* (f(b_0) - f(a_0))\\
-x^* (f(b_0) - f(a_0)) &= b_0(f(b_0) - f(a_0)) - f(b_0)(b_0 - a_0)\\
-x^* (f(b_0) - f(a_0)) &= \cancel{b_0f(b_0)} - b_0f(a_0) - \cancel{b_0f(b_0)} + a_0f(b_0)\\
-\end{array}
+\begin{aligned}
+\qquad \qquad \frac{f(b_0)}{b_0 - x^p} &= \frac{f(b_0) - f(a_0)}{b_0 - a_0}\\
+\quad f(b_0)(b_0 - a_0) &= (b_0 - x^p)(f(b_0) - f(a_0))\\
+\quad f(b_0)(b_0 - a_0) &= b_0(f(b_0) - f(a_0)) - x^p(f(b_0) - f(a_0))\\
+x^p(f(b_0) - f(a_0)) &= b_0(f(b_0) - f(a_0)) - f(b_0)(b_0 - a_0)\\
+x^p(f(b_0) - f(a_0)) &= \cancel{b_0f(b_0)} - b_0f(a_0) - \cancel{b_0f(b_0)} + a_0f(b_0)\\
+\end{aligned}
 $$
 
-$$x^* = \frac{a_0f(b_0) - b_0f(a_0)}{f(b_0) - f(a_0)} \text{ atau } x^* = \frac{b_0f(a_0) - a_0f(b_0)}{f(a_0) - f(b_0)}$$
+$$x^p = \frac{a_0f(b_0) - b_0f(a_0)}{f(b_0) - f(a_0)} \text{ atau } x^p = \frac{b_0f(a_0) - a_0f(b_0)}{f(a_0) - f(b_0)}$$
 
 ## Percobaan
 
