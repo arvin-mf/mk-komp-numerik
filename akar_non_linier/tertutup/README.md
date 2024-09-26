@@ -29,7 +29,7 @@ Metode Regula Falsi juga diawali dengan memilih dua titik dengan nilai $f(x)$ ya
 
 |  | Biseksi | Regula Falsi | Metode Terbuka |
 | --- | :---: | :---: | :---: |
-| Nilai awal yang dibutuhkan [^1] | $a$, $b$ | $a$, $b$ | $a$ |
+| Nilai acuan yang dibutuhkan [^1] | $a$, $b$ | $a$, $b$ | $x_n$ |
 | Titik acuan baru di iterasi berikutnya | titik tengah $a$ dan $b$ | titik potong garis penghubung $f(a)$ dan $f(b)$ dengan sumbu-x | *di chapter lain* |
 
 [^1]: Adapun nilai batas error selalu dibutuhkan dalam semua metode untuk menjadi terminus dari iterasi metode
