@@ -47,7 +47,9 @@ $g_1(x)$ pada gambar ilustrasi adalah garis penghubung antara titik A dan titik 
 $x^*$ merupakan titik potong $g_1(x)$ dengan sumbu-x.
 
 Segitiga $[(x^*,0), (b_0, 0), (b_0, f(b_0))]$ dengan segitiga $[(a_0,f(a_0)), (b_0, f(a_0)), (b_0, f(b_0))]$ adalah pasangan segitiga sebangun. Dari kesebangunan ini, kita dapatkan bahwa perbandingan tinggi dan alas pada kedua segitiga tersebut adalah sama.
+
 $$\frac{f(b_0) - 0}{b_0 - x^*} = \frac{f(b_0) - f(a_0)}{b_0 - a_0}$$
+
 Yang kita perlu cari adalah $x^*$ (untuk menjadi titik acuan di iterasi berikutnya).
 $$
 \begin{array}{rl}
