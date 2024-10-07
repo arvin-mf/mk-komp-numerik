@@ -36,7 +36,7 @@ Contoh masukan: `0.000001` dan `3.0`
 
 # Secant
 ## Teori
-Metode Newton-Raphson sudah menyuguhkan cara yang praktis dalam mencari akar persamaan, yaitu dengan hanya menentukan satu titik tebakan awal.
+Metode Newton-Raphson sudah menyuguhkan cara yang praktis dalam mencari akar persamaan, yaitu dengan hanya menentukan satu titik tebakan awal. Namun, metode ini masih membawa sebuah kelemahan.
 
 Metode Secant mengatasi kelemahan dari metode Newton Raphson, yakni potensi sulitnya menentukan turunan dari suatu fungsi. Kebutuhan bentuk turunan dari fungsi digantikan dengan penjabaran turunan sebagai perubahan/kemiringan antara dua titik. 
 
@@ -44,7 +44,7 @@ $$
 \begin{aligned}
 f'(x)\rightarrow \text{ kemiringan }&=\frac{\Delta y}{\Delta x}\\
 &=\frac{y_2-y_1}{x_2-x_1}\\
-f'(x)&=\frac{f(x_n)-f(x_{n-1})}{x_n-x_{n-1}}
+\qquad\qquad\qquad f'(x)&=\frac{f(x_n)-f(x_{n-1})}{x_n-x_{n-1}}
 \end{aligned}
 $$
 
