@@ -64,7 +64,7 @@ $$
 
 ## Percobaan
 ### Contoh 1
-Banyak variabel: 2
+Banyak variabel: 2<br>
 Masukan untuk persamaan:
 > 3 -1 4<br>
 > -2 2 2
@@ -72,7 +72,8 @@ Masukan untuk persamaan:
 ![](../assets/sistem_pers_linier/spl2v.png)
 
 ### Contoh 2
-Banyak variabel: 3
+Banyak variabel: 3<br>
+Masukan untuk persamaan:
 > -1 4 2 4<br>
 > 2 0 -1 4<br>
 > 1 -1 1 3
@@ -80,7 +81,8 @@ Banyak variabel: 3
 ![](../assets/sistem_pers_linier/spl3v.png)
 
 ### Contoh 3
-Banyak variabel: 4
+Banyak variabel: 4<br>
+Masukan untuk persamaan:
 > 1 1 0 -2 1<br>
 > 2 -1 3 1 4<br>
 > -3 1 -2 2 4<br>
