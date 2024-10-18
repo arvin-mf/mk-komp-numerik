@@ -101,4 +101,173 @@ Masukan untuk persamaan:
 ![](../assets/sistem_pers_linier/spl4v.png)
 
 ## Pengerjaan secara Tradisional
+### (dari Contoh 3)
 
+$$
+\begin{aligned}
+x_1 + x_2 - 2x_4 &= 1 \\
+2x_1 - x_2 + 3x_3 + x_4 &= 4 \\
+-3x_1 + x_2 - 2x_3 + 2x_4 &= 4 \\
+4x_1 + x_2 - x_4 &= 2
+\end{aligned}
+$$
+
+$$
+\left(
+    \begin{array}{cccc}
+        1 & 1 & 0 & -2 \\
+        2 & -1 & 3 & 1 \\
+        -3 & 1 & -2 & 2 \\
+        4 & 1 & 0 & -1
+    \end{array}
+\right)
+\left(
+    \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+        x_4
+    \end{array}
+\right)=
+\left(
+    \begin{array}{c}
+        1 \\
+        4 \\
+        4 \\
+        2
+    \end{array}
+\right)
+$$
+
+Matriks lengkap SPL:
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        2 & -1 & 3 & 1 & 4 \\
+        -3 & 1 & -2 & 2 & 4 \\
+        4 & 1 & 0 & -1 & 2
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & -3 & 3 & 5 & 2 \\
+        -3 & 1 & -2 & 2 & 4 \\
+        4 & 1 & 0 & -1 & 2
+    \end{array}
+\right)
+\rightarrow
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & -3 & 3 & 5 & 2 \\
+        0 & 4 & -2 & -4 & 7 \\
+        4 & 1 & 0 & -1 & 2
+    \end{array}
+\right)
+\rightarrow
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & -3 & 3 & 5 & 2 \\
+        0 & 4 & -2 & -4 & 7 \\
+        0 & -3 & 0 & 7 & -2
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 4 & -2 & -4 & 7 \\
+        0 & -3 & 0 & 7 & -2
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 0 & 2 & \frac{8}{3} & \frac{29}{3} \\
+        0 & -3 & 0 & 7 & -2
+    \end{array}
+\right)
+\rightarrow
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 0 & 2 & \frac{8}{3} & \frac{29}{3} \\
+        0 & 0 & -3 & 2 & -4
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 0 & 1 & \frac{4}{3} & \frac{29}{6} \\
+        0 & 0 & -3 & 2 & -4
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 0 & 1 & \frac{4}{3} & \frac{29}{6} \\
+        0 & 0 & 0 & 6 & \frac{21}{2}
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc|c}
+        1 & 1 & 0 & -2 & 1 \\
+        0 & 1 & -1 & -\frac{5}{3} & -\frac{2}{3} \\
+        0 & 0 & 1 & \frac{4}{3} & \frac{29}{6} \\
+        0 & 0 & 0 & 1 & \frac{7}{4}
+    \end{array}
+\right)
+$$
+
+$$
+\left(
+    \begin{array}{cccc}
+        1 & 1 & 0 & -2 \\
+        0 & 1 & -1 & -\frac{5}{3} \\
+        0 & 0 & 1 & \frac{4}{3} \\
+        0 & 0 & 0 & 1
+    \end{array}
+\right)
+\left(
+    \begin{array}{c}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+        x_4
+    \end{array}
+\right)=
+\left(
+    \begin{array}{c}
+        1 \\
+        -\frac{2}{3} \\
+        \frac{29}{6} \\
+        \frac{7}{4}
+    \end{array}
+\right)
+$$
